@@ -23,7 +23,7 @@
 	var PORTION_MODE_RETAIN = 'retain';
 	var PORTION_MODE_FIRST = 'first';
 
-	var doc = document;
+	var doc =  typeof document === 'undefined' ? '' : document;
 	var hasOwn = {}.hasOwnProperty;
 
 	function escapeRegExp(s) {
